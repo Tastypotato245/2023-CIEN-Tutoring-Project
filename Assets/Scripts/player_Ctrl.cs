@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player_Ctrl : MonoBehaviour
+public class Player_Ctrl : MonoBehaviour
 {
     public int hp = 4;
 
@@ -51,7 +51,7 @@ public class player_Ctrl : MonoBehaviour
             Vector2 dir = (mousePos - (Vector2)transform.position).normalized;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             GameObject go = Instantiate(bullet_GO, transform.position, Quaternion.Euler(0,0, angle));
-            go.GetComponent<bullet>().attack_dir = dir;
+            go.GetComponent<Bullet>().attack_dir = dir;
 
             is_Attack_Delaying = true;
             Invoke("DelayTime", delay_Time);

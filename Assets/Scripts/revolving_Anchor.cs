@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class revolving_Anchor : MonoBehaviour
+public class Revolving_Anchor : MonoBehaviour
 {
     public float speed = 1;
 

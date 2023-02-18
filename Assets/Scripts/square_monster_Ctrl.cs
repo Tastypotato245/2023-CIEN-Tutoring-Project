@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 
-public class square_monster_Ctrl : MonoBehaviour
+public class Square_monster_Ctrl : MonoBehaviour
 {
     //item 
     [Header("Item ฐüทร")]
