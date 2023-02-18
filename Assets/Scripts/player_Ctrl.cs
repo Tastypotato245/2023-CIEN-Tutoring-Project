@@ -7,7 +7,7 @@ public class player_Ctrl : MonoBehaviour
     public int hp = 4;
 
     [SerializeField] private Rigidbody2D _rigidbody2D;
-    private float player_Speed = 4.0f;
+    public float player_Speed = 5.0f;
 
 
     //공격 관련

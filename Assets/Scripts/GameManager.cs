@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject monster_Basic;
     [SerializeField] private GameObject monster_Strong;
 
+    [Header("시간")]
+    [SerializeField] private Timer timer;
+
     private void FixedUpdate()
     {
         Check_MonsterSpawn();
@@ -65,13 +68,13 @@ public class GameManager : MonoBehaviour
         Vector2 pos = new Vector2(0,0);
 
         if(r == 0)
-            pos = new Vector2(Random.Range(-11.0f, 11.0f), 6f);     //Up Side
+            pos = new Vector2(Random.Range(-15.0f, 15.0f), 10f);     //Up Side
         else if(r == 1)
-            pos = new Vector2(Random.Range(-11.0f, 11.0f), -6f);    //Down Side
+            pos = new Vector2(Random.Range(-15.0f, 15.0f), -10f);    //Down Side
         else if(r == 2)
-            pos = new Vector2(11.0f, Random.Range(-6f, 6f));     //Right Side
+            pos = new Vector2(15.0f, Random.Range(-10f, 10f));     //Right Side
         else if(r == 3)
-            pos = new Vector2(-11.0f, Random.Range(-6f, 6f));    //Left Side
+            pos = new Vector2(-15.0f, Random.Range(-10f, 10f));    //Left Side
 
         return (Vector2)(player.transform.position)+pos;
     }
@@ -79,12 +82,14 @@ public class GameManager : MonoBehaviour
     public void Start_Game()
     {
         isInProgress = true;
+        timer.isInProgress = isInProgress;
         spawnDelayTime = first_SpawnDelayTime; //monster_SpawnTime을 monster_SpawnTime_Setting의 시간으로 변경함 (초기화)
     }
 
     public void End_Game() //
     {
         isInProgress = false;
+        timer.isInProgress = isInProgress;
 
         Time.timeScale = 0;
     }
