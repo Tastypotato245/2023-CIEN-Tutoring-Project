@@ -79,7 +79,11 @@ public class Player_Ctrl : MonoBehaviour
         }
         if (collision.CompareTag("DelayReduction"))
         {
-            delay_Time *= 0.95f;
+            delay_Time -= 0.1f;
+            if (delay_Time < 0.1f)
+            {
+                delay_Time = 0.1f;
+            }
         }
     }
 
