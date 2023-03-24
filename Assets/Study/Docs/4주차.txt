@@ -1,0 +1,12 @@
+4주차
+Enemy 만들기.
+Enemy 오브젝트에 EnemyMove 컴포넌트를 드래그 앤 드롭으로 추가.
+동작 확인.
+EnemyMove 코드에서, GameObject.Find() 함수를 통해 해당 이름의 오브젝트를 찾을 수 있다는 것 설명.
+Enemy 오브젝트를 Prefab화 하기.
+EnemySpawner 만들기.
+EnemySpawner 오브젝트에, EnemySpawner 컴포넌트를 드래그 앤 드롭으로 추가.
+인스펙터에서, EnemySpawner 컴포넌트의 SpawnableObject 항목에 Enemy 프리팹을 드래그 앤 드롭으로 추가하기.
+동작 확인.
+EnemySpawner 코드 간략히 설명.
+타이머 기능을 Time.deltaTime을 통해 제작할 수 있다는 것 설명.

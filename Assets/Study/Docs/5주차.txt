@@ -1,0 +1,14 @@
+5주차
+PlayerHP 컴포넌트를 Player에 추가하기.
+Destroy 함수를 통해 해당 오브젝트를 파괴할 수 있다는 것 설명.
+Enemy, Player, Bullet 에 Collider2D 추가하기. (Bullet은 OnTrigger 체크)
+Enemy, Player에 Rigidbody2D 추가하기. (Freeze Rotation z 체크, gravity scale = 0 설정.)
+Rigidbody2D와 Collider2D 간단히 설명해주기.
+(Rigidbody는 해당 오브젝트에 물리 기능을 부여, Collider는 해당 오브젝트의 충돌 범위를 설정해 줍니다......)
+Enemy에 EnemyAttack 추가.
+동작 확인.
+EnemyAttack 코드 설명.
+OnColliderEnter~ 함수로 해당 오브젝트에 무엇이 충돌했는지 감지할 수 있음을 설명하기.
+gameObject.name으로 인스펙터/하이어라키에서 설정한 이름을 가져올 수 있음을 설명하기.
+tag 여유 있으면 설명.
+GetComponent 함수로 오브젝트의 컴포넌트를 가져올 수 있음을 설명하기.

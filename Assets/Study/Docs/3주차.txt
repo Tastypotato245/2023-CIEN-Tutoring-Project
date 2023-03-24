@@ -1,0 +1,9 @@
+3주차
+Bullet 만들기.
+Bullet 오브젝트에 Bullet 컴포넌트를 드래그 앤 드롭으로 추가.
+Bullet 오브젝트를 Prefab화 하기.
+Prefab에 대한 개념 설명 (총알 같이 복제품이 많이 필요한 오브젝트를 미리 형태를 잡아두는 것 등......)
+Player 오브젝트에 PlayerAttack 컴포넌트를 추가하기.
+인스펙터에서, PlayerAttack 컴포넌트의 bullet 항목에 Bullet 프리팹을 드래그 앤 드롭으로 추가하기.
+PlayerAttack 코드 간략히 설명.
+Input.GetMouseButton() 등을 통해 마우스 입력을 받을 수 있다는 것 설명하기.
