@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 4
   _rigidbody2D: {fileID: 132010914}
-  player_Speed: 6
+  player_Speed: 5
   bullet_GO: {fileID: 1107596685804355126, guid: 1a4176876aca2d0499c28759a9414f74, type: 3}
   delay_Time: 1.5
   gameManager: {fileID: 1025579456}
