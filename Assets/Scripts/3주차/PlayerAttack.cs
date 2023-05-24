@@ -13,6 +13,16 @@ public class PlayerAttack : MonoBehaviour
 
     private float timer = 0f;
 
+    private void Awake()
+    {
+        Debug.Log("Awake");
+    }
+
+    private void Start()
+    {
+        Debug.Log("Start");
+    }
+
     void Update()
     {
         // 우리는 스크립트를 작성할 때, Input.GetMouseButton(0) 이라는 함수를 통해 마우스 왼쪽 버튼이 눌렸는지 확인할 수 있어요.
