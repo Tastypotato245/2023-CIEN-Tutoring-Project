@@ -14,7 +14,6 @@ public class UIManager_World : MonoBehaviour
     public GameObject ui_Setting;
     public GameObject ui_GameOver;
 
-
     private void Awake()
     {
         Instance = this;

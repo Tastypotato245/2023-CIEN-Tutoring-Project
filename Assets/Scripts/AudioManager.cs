@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
     {
         Instance = this;
     }
+
+
     public void PlayBGM(string name)
     {
         AudioClip bgmClip = Resources.Load<AudioClip>("BGM/" + name);

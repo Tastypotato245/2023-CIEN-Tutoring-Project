@@ -25,7 +25,6 @@ public class Bullet_Player : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            
             if (collision.GetComponent<Enemy_근접>())
             {
                 collision.GetComponent<Enemy_근접>().Dead();
@@ -34,6 +33,7 @@ public class Bullet_Player : MonoBehaviour
             {
                 collision.GetComponent<Enemy_원거리>().Dead();
             }
+
             Destroy(collision.gameObject);
             StopAllCoroutines();
             Destroy(gameObject);

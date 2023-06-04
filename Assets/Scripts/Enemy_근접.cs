@@ -41,5 +41,6 @@ public class Enemy_근접 : MonoBehaviour
     {
         GameManager.Instance.Score += score * GameManager.Instance.Stage;
         AudioManager.Instance.PlaySFX("enemydie", transform.position);
+
     }
 }

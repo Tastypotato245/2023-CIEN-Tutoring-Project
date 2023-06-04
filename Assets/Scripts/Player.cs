@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb2D;
     public Bullet_Player bullet;
 
+    //속성(변수) vs 기능(함수)
+
     public GameObject aimObject;
     public Transform firePos;
 
